@@ -9,7 +9,7 @@ public class CalculatorTest {
     @Test
     public void factorialTruePositive() {
         assertEquals("Finding factorial of a number for True Positive", 6, calculator.factorial(3), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 720, calculator.factorial(6), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 24, calculator.factorial(4), DELTA);
     }
 
     @Test

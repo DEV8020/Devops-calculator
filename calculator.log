@@ -6,3 +6,19 @@
 2023-03-14 18:51:02.439 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 120
 2023-03-14 18:51:02.439 [main] INFO  org.example.Main - [FACTORIAL] - 10
 2023-03-14 18:51:02.439 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 3628800
+2023-03-15 11:35:27.696 [main] INFO  org.example.Main - [FACTORIAL] - 3
+2023-03-15 11:35:27.697 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 6
+2023-03-15 11:35:27.697 [main] INFO  org.example.Main - [FACTORIAL] - 4
+2023-03-15 11:35:27.698 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 24
+2023-03-15 11:35:27.698 [main] INFO  org.example.Main - [FACTORIAL] - 5
+2023-03-15 11:35:27.698 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 120
+2023-03-15 11:35:27.699 [main] INFO  org.example.Main - [FACTORIAL] - 10
+2023-03-15 11:35:27.699 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 3628800
+2023-03-15 11:36:03.863 [main] INFO  org.example.Main - [FACTORIAL] - 3
+2023-03-15 11:36:03.865 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 6
+2023-03-15 11:36:03.865 [main] INFO  org.example.Main - [FACTORIAL] - 4
+2023-03-15 11:36:03.865 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 24
+2023-03-15 11:36:03.865 [main] INFO  org.example.Main - [FACTORIAL] - 5
+2023-03-15 11:36:03.865 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 120
+2023-03-15 11:36:03.866 [main] INFO  org.example.Main - [FACTORIAL] - 10
+2023-03-15 11:36:03.866 [main] INFO  org.example.Main - [RESULT - FACTORIAL] - 3628800
