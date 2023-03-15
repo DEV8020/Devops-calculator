@@ -17,6 +17,7 @@ public class CalculatorTest {
         assertNotEquals("Finding factorial of a number for True Negative", 69, calculator.factorial(5), DELTA);
         assertNotEquals("Finding factorial of a number for True Negative", 42, calculator.factorial(10), DELTA);
     }
+    //fact ends
 
 //    @Test
 //    public void powerTruePositive() {
