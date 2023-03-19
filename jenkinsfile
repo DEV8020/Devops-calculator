@@ -1,0 +1,51 @@
+pipeline {
+    environment{
+        imageName = ""
+    }
+    agent any
+    
+    stages {
+        
+        stage('Git Pull') {
+            steps {
+                git 'https://github.com/DEV8020/Devops-calculator.git'
+               
+            }
+        }
+        stage('Maven Build + JUnit Tests') {
+            steps {
+                sh 'mvn clean install'
+
+            }
+        }
+        stage('Build Docker Image') {
+			steps {
+			    script{
+				imageName = docker.build "devdattdatar/calculator-devops:latest"
+			    }
+			}
+		}
+		stage('Push Docker Image to Docker Hub') {
+			steps {
+			    script{
+				docker.withRegistry('','docker-hub'){
+				imageName.push()
+				    }
+			    }
+			}
+		}
+			 // Ansible Deploy to remote server (managed host)
+        stage('Ansible Deploy') {
+            steps {
+                ansiblePlaybook becomeUser: 'null',
+                colorized: true,
+                installation: 'Ansible',
+                inventory: 'Inventory',
+                playbook: 'docker-image.yml',
+                sudoUser: 'null'           }
+        }
+		
+    }
+        
+    
+}
