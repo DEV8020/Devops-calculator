@@ -1,6 +1,6 @@
 pipeline {
     environment{
-        imageName = ""
+        image = ""
     }
     agent any
     
@@ -21,7 +21,7 @@ pipeline {
         stage('Build Docker Image') {
 			steps {
 			    script{
-				imageName = docker.build "devdattdatar/calculator-devops:latest"
+				image = docker.build "devdattdatar/calculator-devops:latest"
 			    }
 			}
 		}
@@ -29,11 +29,16 @@ pipeline {
 			steps {
 			    script{
 				docker.withRegistry('','docker-hub'){
-				imageName.push()
+				image.push()
 				    }
 			    }
 			}
 		}
+		stage('Removing Docker Image from Local') {
+                    steps {
+                        sh "docker rmi devdattdatar/calculator-devops:latest"
+                    }
+                }
 			 // Ansible Deploy to remote server (managed host)
         stage('Ansible Deploy') {
             steps {
