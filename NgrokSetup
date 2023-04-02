@@ -1,0 +1,7 @@
+1. Sign up in https://ngrok.com/
+2. Download ngrok from: https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz
+3. Then extract ngrok from the terminal: $sudo tar xvzf ~/Downloads/ngrok-stable-linux-amd64.tgz -C /usr/local/bin
+4. Copy Authtoken from: https://dashboard.ngrok.com/get-started/your-authtoken
+5. Add Authtoken: $ngrok authtoken <token>
+6. Execute $ngrok http 8080; copy the public ip address for your local host.
+7.Manage Jenkins->configure systems->jenkins URL : ngrok forwarding URL

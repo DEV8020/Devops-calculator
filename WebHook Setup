@@ -1,0 +1,3 @@
+Github Repository -> settings -> WebHooks -> add Webhook
+    Payload URL: ngrok forwarding URL/github-webhook/
+    Secret Text: secret key(github authentication token)
